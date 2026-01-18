@@ -1,12 +1,16 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-<h1 class="text-3xl text-blue-500">
-  Wisma Muslim
-</h1>
-</template>
+  <div class="flex flex-col min-h-screen">
+    <Navbar />
 
-<style scoped>
-</style>
+    <main class="flex-grow">
+      <RouterView />
+    </main>
+
+    <Footer />
+  </div>
+</template>
