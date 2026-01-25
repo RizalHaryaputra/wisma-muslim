@@ -75,7 +75,7 @@ const features = [
                         </div>
                     </div>
 
-                    <div class="relative lg:ml-auto w-full max-w-lg">
+                    <div class="relative lg:ml-auto w-full lg:max-w-lg">
                         <div
                             class="relative rounded-2xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:row-span-4 shadow-2xl">
                             <div class="rounded-xl overflow-hidden bg-white">
@@ -122,8 +122,8 @@ const features = [
                     </p>
                 </div>
 
-                <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto mt-16 w-full sm:mt-20 lg:mt-24 lg:max-w-none">
+                    <dl class="grid grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
                         <div v-for="feature in features" :key="feature.name"
                             class="flex flex-col bg-white rounded-3xl p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-200 transition-all duration-300">
                             <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 mb-4">
@@ -142,9 +142,9 @@ const features = [
         </div>
 
         <div class="bg-white">
-            <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div class="mx-4 md:mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
                 <div
-                    class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                    class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl rounded-2xl sm:rounded-3xl py-8 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
 
                     <svg viewBox="0 0 1024 1024"
                         class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"

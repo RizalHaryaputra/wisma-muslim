@@ -7,10 +7,10 @@ const isOpen = ref(false)
 
 const menuItems = [
     { name: 'Beranda', path: '/' },
-    { name: 'Tentang Kami', path: '/tentang-kami' },
+    { name: 'Tentang Kami', path: '/about' },
     { name: 'Program', path: '/program' },
-    { name: 'Fasilitas', path: '/fasilitas' },
-    { name: 'Galeri', path: '/galeri' },
+    { name: 'Fasilitas', path: '/facility' },
+    { name: 'Galeri', path: '/gallery' },
 ]
 </script>
 
@@ -38,7 +38,7 @@ const menuItems = [
                         {{ item.name }}
                     </RouterLink>
 
-                    <RouterLink to="/pendaftaran-faq">
+                    <RouterLink to="/join">
                         <button
                             class="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-6 py-2.5 rounded-full text-sm font-medium shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105 active:scale-95">
                             Daftar Sekarang
@@ -64,7 +64,7 @@ const menuItems = [
                     {{ item.name }}
                 </RouterLink>
                 <div class="pt-4">
-                    <RouterLink to="/pendaftaran-faq" @click="isOpen = false">
+                    <RouterLink to="/join" @click="isOpen = false">
                         <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold shadow-md">
                             Daftar Sekarang
                         </button>
