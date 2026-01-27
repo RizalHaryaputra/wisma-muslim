@@ -31,7 +31,7 @@ const menuItems = [
                     </div>
                 </div>
 
-                <div class="hidden md:flex space-x-8 items-center">
+                <div class="hidden lg:flex space-x-8 items-center">
                     <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path"
                         class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200"
                         active-class="text-blue-600 font-semibold">
@@ -46,7 +46,7 @@ const menuItems = [
                     </RouterLink>
                 </div>
 
-                <div class="md:hidden flex items-center">
+                <div class="lg:hidden flex items-center">
                     <button @click="isOpen = !isOpen" class="text-gray-600 hover:text-blue-600 focus:outline-none">
                         <Bars3Icon v-if="!isOpen" class="h-8 w-8" />
                         <XMarkIcon v-else class="h-8 w-8" />
@@ -56,7 +56,7 @@ const menuItems = [
         </div>
 
         <div v-show="isOpen"
-            class="md:hidden absolute w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl">
+            class="lg:hidden absolute w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path" @click="isOpen = false"
                     class="block px-3 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-all"

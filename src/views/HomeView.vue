@@ -43,7 +43,7 @@ const features = [
             <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-                    <div class="max-w-2xl text-center lg:text-left">
+                    <div class="mx-2 md:mx-8 text-center lg:text-left">
                         <div
                             class="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold text-blue-600 ring-1 ring-inset ring-blue-600/20 mb-6 bg-blue-50/50 backdrop-blur-sm">
                             <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
@@ -62,22 +62,22 @@ const features = [
                             kurikulum pembinaan karakter yang syar'i.
                         </p>
 
-                        <div class="flex items-center justify-center lg:justify-start gap-x-6">
-                            <RouterLink to="/pendaftaran-faq"
-                                class="rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all transform hover:-translate-y-1">
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-4">
+                            <RouterLink to="/join"
+                                class="rounded-xl w-full md:w-auto bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all transform hover:-translate-y-1">
                                 Daftar Sekarang
                             </RouterLink>
-                            <RouterLink to="/tentang-kami"
-                                class="text-sm font-semibold leading-6 text-gray-900 flex items-center gap-2 hover:text-blue-600 transition-colors">
+                            <RouterLink to="/about"
+                                class="text-sm w-full md:w-auto text-center font-semibold text-gray-900 hover:text-blue-600 transition-colors px-6 py-3.5 border-2 border-gray-500 rounded-xl hover:border-blue-600">
                                 Pelajari Lebih Lanjut
-                                <ArrowRightIcon class="h-4 w-4" />
+                                <!-- <ArrowRightIcon class="h-4 w-4" /> -->
                             </RouterLink>
                         </div>
                     </div>
 
                     <div class="relative lg:ml-auto w-full lg:max-w-lg">
                         <div
-                            class="relative rounded-2xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:row-span-4 shadow-2xl">
+                            class="relative rounded-2xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:row-span-4 shadow-2xl mx-2 md:mx-8">
                             <div class="rounded-xl overflow-hidden bg-white">
                                 <img src="https://images.unsplash.com/photo-1612207644086-243779ab1013?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="Suasana Wisma"
@@ -86,7 +86,7 @@ const features = [
                         </div>
 
                         <div
-                            class="absolute -bottom-6 -left-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce-slow">
+                            class="absolute -bottom-6 -left-3 sm:-left-1 lg:-left-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce-slow">
                             <div class="bg-red-100 p-2.5 rounded-xl text-red-600">
                                 <MapPinIcon class="h-6 w-6" />
                             </div>
@@ -97,7 +97,7 @@ const features = [
                         </div>
 
                         <div
-                            class="absolute -top-6 -right-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl hidden sm:block">
+                            class="absolute -top-6 sm:-right-1 lg:-right-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl hidden sm:block">
                             <div class="text-center">
                                 <p class="text-2xl font-bold text-blue-600">500+</p>
                                 <p class="text-xs text-gray-600 font-medium">Alumni Sukses</p>
@@ -109,7 +109,7 @@ const features = [
             </div>
         </div>
 
-        <div class="py-24 sm:py-32 bg-slate-50 relative">
+        <div class="py-8 sm:py-16 bg-slate-50 relative">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl text-center">
                     <h2 class="text-base font-semibold leading-7 text-blue-600">Kenapa Memilih Kami?</h2>
@@ -122,7 +122,7 @@ const features = [
                     </p>
                 </div>
 
-                <div class="mx-auto mt-16 w-full sm:mt-20 lg:mt-24 lg:max-w-none">
+                <div class="mx-auto mt-4 w-full sm:mt-8 lg:mt-12 lg:max-w-none">
                     <dl class="grid grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
                         <div v-for="feature in features" :key="feature.name"
                             class="flex flex-col bg-white rounded-3xl p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-200 transition-all duration-300">
@@ -142,9 +142,9 @@ const features = [
         </div>
 
         <div class="bg-white">
-            <div class="mx-4 md:mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div class="mx-4 md:mx-auto max-w-7xl py-8 sm:py-16 sm:px-6 lg:px-8">
                 <div
-                    class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl rounded-2xl sm:rounded-3xl py-8 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                    class="relative isolate overflow-hidden bg-gray-900 px-8 pt-16 shadow-2xl rounded-3xl sm:rounded-3xl py-8 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
 
                     <svg viewBox="0 0 1024 1024"
                         class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
