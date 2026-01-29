@@ -4,103 +4,122 @@ import {
     WifiIcon,
     UserGroupIcon,
     MapPinIcon,
+    SparklesIcon,
     ArrowRightIcon
 } from '@heroicons/vue/24/outline'
 
 const features = [
     {
         name: 'Lingkungan Kondusif',
-        description: 'Suasana tenang yang mendukung fokus belajar akademis dan ibadah harian.',
+        description: 'Circle pertemanan yang saling mengingatkan dalam kebaikan, jauh dari hingar bingar negatif.',
         icon: UserGroupIcon,
-        color: 'bg-blue-50 text-blue-600'
+        bg: 'bg-blue-50',
+        text: 'text-blue-600',
+        border: 'group-hover:border-blue-200'
     },
     {
-        name: 'Program Diniyah',
-        description: 'Kurikulum terstruktur: Tahsin, Bahasa Arab, dan Kajian Kitab rutin.',
+        name: 'Kurikulum Diniyah',
+        description: 'Seimbangkan kuliahmu dengan ilmu syari: Tahsin, Bahasa Arab, dan Kajian Kitab rutin.',
         icon: AcademicCapIcon,
-        color: 'bg-emerald-50 text-emerald-600'
+        bg: 'bg-emerald-50',
+        text: 'text-emerald-600',
+        border: 'group-hover:border-emerald-200'
     },
     {
-        name: 'Fasilitas Lengkap',
-        description: 'Kamar nyaman, WiFi kencang untuk kuliah online, dan dapur bersama.',
+        name: 'Fasilitas Premium',
+        description: 'Kamar full-furnished, AC/Non-AC, High-speed WiFi, dan dapur bersama yang bersih.',
         icon: WifiIcon,
-        color: 'bg-cyan-50 text-cyan-600'
+        bg: 'bg-purple-50',
+        text: 'text-purple-600',
+        border: 'group-hover:border-purple-200'
     },
 ]
 </script>
 
 <template>
-    <div class="bg-white overflow-hidden">
+    <div class="bg-white overflow-hidden selection:bg-blue-100 selection:text-blue-900">
 
-        <div class="relative isolate">
+        <div class="relative isolate pt-14 pb-20 lg:pt-20 lg:pb-28">
 
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-                <div
-                    class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-200 to-cyan-200 opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-200 to-cyan-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
 
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-                    <div class="mx-2 md:mx-8 text-center lg:text-left">
-                        <div
-                            class="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold text-blue-600 ring-1 ring-inset ring-blue-600/20 mb-6 bg-blue-50/50 backdrop-blur-sm">
-                            <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
-                            Penerimaan Santri Baru Tahun 2026
-                        </div>
+                    <div class="max-w-2xl text-center lg:text-left pt-10 lg:pt-0">
+                        <!-- <div
+                            class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 mb-8 bg-blue-50/50 backdrop-blur-sm shadow-sm hover:bg-blue-100 transition-colors cursor-default">
+                            <SparklesIcon class="w-4 h-4 text-blue-600" />
+                            <span>Penerimaan Santri Baru 2026 Dibuka</span>
+                        </div> -->
 
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6 leading-tight">
+                        <h1
+                            class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl mb-6 leading-[1.1]">
                             Hunian Nyaman, <br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                                Lingkungan Islami
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-400">
+                                Lingkungan Islami.
                             </span>
                         </h1>
 
-                        <p class="mt-4 text-lg leading-8 text-gray-600 mb-8">
-                            Wisma Muslim Yogyakarta menyediakan tempat tinggal strategis dekat kampus UGM & UNY dengan
-                            kurikulum pembinaan karakter yang syar'i.
+                        <p class="mt-6 text-lg leading-8 text-slate-600 mb-10 font-light">
+                            Lebih dari sekadar kost. Ini adalah ekosistem bagi mahasiswa yang ingin unggul dalam <strong
+                                class="text-slate-900 font-semibold">akademik</strong> dan kokoh dalam <strong
+                                class="text-slate-900 font-semibold">agama</strong>.
                         </p>
 
-                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-4">
-                            <RouterLink to="/join"
-                                class="rounded-xl w-full md:w-auto bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all transform hover:-translate-y-1">
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <RouterLink to="/pendaftaran-faq"
+                                class="w-full sm:w-auto rounded-xl bg-blue-600 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-blue-500/30 hover:bg-blue-500 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2">
                                 Daftar Sekarang
                             </RouterLink>
-                            <RouterLink to="/about"
-                                class="text-sm w-full md:w-auto text-center font-semibold text-gray-900 hover:text-blue-600 transition-colors px-6 py-3.5 border-2 border-gray-500 rounded-xl hover:border-blue-600">
-                                Pelajari Lebih Lanjut
-                                <!-- <ArrowRightIcon class="h-4 w-4" /> -->
+                            <RouterLink to="/tentang-kami"
+                                class="w-full sm:w-auto rounded-xl px-8 py-4 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-blue-600 border border-slate-200 hover:border-blue-200 transition-all duration-300 flex justify-center items-center gap-2 group">
+                                Pelajari Program
+                                <ArrowRightIcon class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </RouterLink>
                         </div>
                     </div>
 
-                    <div class="relative lg:ml-auto w-full lg:max-w-lg">
+                    <div class="relative lg:ml-auto w-full max-w-lg perspective-1000">
                         <div
-                            class="relative rounded-2xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:row-span-4 shadow-2xl mx-2 md:mx-8">
-                            <div class="rounded-xl overflow-hidden bg-white">
-                                <img src="https://images.unsplash.com/photo-1612207644086-243779ab1013?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Suasana Wisma"
-                                    class="w-full h-100 object-cover opacity-90 hover:opacity-100 transition-opacity duration-500">
+                            class="relative rounded-3xl bg-slate-900/5 p-3 ring-1 ring-inset ring-slate-900/10 shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500 group">
+                            <div class="rounded-2xl overflow-hidden bg-white aspect-[4/5] sm:aspect-[4/3] relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+                                <img src="https://images.unsplash.com/photo-1573919900573-33f075249e97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjMyfHx8ZW58MHx8fHx8"
+                                    alt="Mahasiswa Belajar"
+                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+
+                                <!-- <div class="absolute bottom-6 left-6 z-20 text-white">
+                                    <p class="text-sm font-medium text-blue-200 mb-1">Lokasi Premium</p>
+                                    <p class="text-xl font-bold">Pogung & Sekitar UGM</p>
+                                </div> -->
                             </div>
                         </div>
 
                         <div
-                            class="absolute -bottom-6 -left-3 sm:-left-1 lg:-left-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce-slow">
-                            <div class="bg-red-100 p-2.5 rounded-xl text-red-600">
+                            class="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center gap-4 animate-float">
+                            <div class="bg-red-50 p-3 rounded-xl text-red-500">
                                 <MapPinIcon class="h-6 w-6" />
                             </div>
                             <div>
-                                <p class="text-xs text-gray-500 font-medium">Lokasi Strategis</p>
-                                <p class="text-sm font-bold text-gray-800">5 Menit ke UGM</p>
+                                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Jarak Tempuh</p>
+                                <p class="text-base font-bold text-slate-800">5 Menit ke Kampus</p>
                             </div>
                         </div>
 
                         <div
-                            class="absolute -top-6 sm:-right-1 lg:-right-6 bg-white/70 backdrop-blur-md border border-white/50 p-4 rounded-2xl shadow-xl hidden sm:block">
+                            class="absolute -top-6 -right-6 bg-white/90 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hidden sm:block animate-float-delayed">
                             <div class="text-center">
-                                <p class="text-2xl font-bold text-blue-600">500+</p>
-                                <p class="text-xs text-gray-600 font-medium">Alumni Sukses</p>
+                                <p
+                                    class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                                    500+</p>
+                                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1">Alumni Sukses
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -109,72 +128,55 @@ const features = [
             </div>
         </div>
 
-        <div class="py-8 sm:py-16 bg-slate-50 relative">
+        <div class="py-24 bg-slate-50/50 relative">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl text-center">
-                    <h2 class="text-base font-semibold leading-7 text-blue-600">Kenapa Memilih Kami?</h2>
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Lebih Dari Sekadar Tempat Tidur
-                    </p>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">
-                        Kami menggabungkan kenyamanan tempat tinggal modern dengan bimbingan keislaman yang hangat dan
-                        bersahabat.
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-base font-bold tracking-wide text-blue-600 uppercase">Kenapa Harus Disini?</h2>
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                        Upgrade Kualitas Hidup Mahasiswa
                     </p>
                 </div>
 
-                <div class="mx-auto mt-4 w-full sm:mt-8 lg:mt-12 lg:max-w-none">
-                    <dl class="grid grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
-                        <div v-for="feature in features" :key="feature.name"
-                            class="flex flex-col bg-white rounded-3xl p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-200 transition-all duration-300">
-                            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 mb-4">
-                                <div :class="[feature.color, 'h-10 w-10 flex items-center justify-center rounded-lg']">
-                                    <component :is="feature.icon" class="h-6 w-6" aria-hidden="true" />
-                                </div>
-                                {{ feature.name }}
-                            </dt>
-                            <dd class="flex flex-auto flex-col text-base leading-7 text-gray-600">
-                                <p class="flex-auto">{{ feature.description }}</p>
-                            </dd>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div v-for="feature in features" :key="feature.name"
+                        class="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 border border-slate-100 transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+                        :class="feature.border">
+                        <div class="absolute -right-10 -top-10 w-32 h-32 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-2xl"
+                            :class="feature.bg.replace('bg-', 'bg-')"></div>
+
+                        <div class="relative z-10">
+                            <div
+                                :class="[feature.bg, feature.text, 'h-14 w-14 flex items-center justify-center rounded-2xl mb-6 transition-transform group-hover:scale-110 duration-300']">
+                                <component :is="feature.icon" class="h-7 w-7" aria-hidden="true" />
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">{{ feature.name }}</h3>
+                            <p class="text-slate-600 leading-relaxed">{{ feature.description }}</p>
                         </div>
-                    </dl>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white">
-            <div class="mx-4 md:mx-auto max-w-7xl py-8 sm:py-16 sm:px-6 lg:px-8">
-                <div
-                    class="relative isolate overflow-hidden bg-gray-900 px-8 pt-16 shadow-2xl rounded-3xl sm:rounded-3xl py-8 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div class="relative py-24 overflow-hidden">
+            <div class="absolute inset-0 bg-slate-900"></div>
+            <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-500/30 blur-[120px] rounded-full">
+            </div>
 
-                    <svg viewBox="0 0 1024 1024"
-                        class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-                        aria-hidden="true">
-                        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                            fill-opacity="0.7" />
-                        <defs>
-                            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                                <stop stop-color="#3B82F6" />
-                                <stop offset="1" stop-color="#06B6D4" />
-                            </radialGradient>
-                        </defs>
-                    </svg>
-
-                    <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Siap Bergabung?
-                            <br />
-                            Wujudkan masa muda yang bermanfaat.
-                        </h2>
-                        <p class="mt-6 text-lg leading-8 text-gray-300">
-                            Kuota terbatas setiap tahunnya. Segera daftarkan diri Anda sebelum pendaftaran ditutup.
-                        </p>
-                        <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                            <RouterLink to="/pendaftaran-faq"
-                                class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                Isi Formulir Pendaftaran
-                            </RouterLink>
-                        </div>
-                    </div>
+            <div class="relative mx-auto max-w-7xl px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl mb-6">
+                    Mulai Perjalanan Hijrahmu Disini
+                </h2>
+                <p class="mx-auto max-w-xl text-lg text-blue-100 mb-10">
+                    Bergabunglah dengan ratusan mahasiswa lainnya yang memilih tumbuh di lingkungan yang menjaga iman
+                    dan imun.
+                </p>
+                <div class="flex items-center justify-center gap-x-6">
+                    <RouterLink to="/pendaftaran-faq"
+                        class="rounded-xl bg-white px-8 py-3.5 text-base font-bold text-slate-900 shadow-xl hover:bg-blue-50 transition-all hover:scale-105">
+                        Booking Kamar Sekarang
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -183,20 +185,28 @@ const features = [
 </template>
 
 <style scoped>
-/* Animasi lambat untuk floating card */
-.animate-bounce-slow {
-    animation: bounce 3s infinite;
+.animate-float {
+    animation: float 6s ease-in-out infinite;
 }
 
-@keyframes bounce {
+.animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+@keyframes float {
 
     0%,
     100% {
-        transform: translateY(-5%);
+        transform: translateY(0);
     }
 
     50% {
-        transform: translateY(5%);
+        transform: translateY(-15px);
     }
+}
+
+.perspective-1000 {
+    perspective: 1000px;
 }
 </style>

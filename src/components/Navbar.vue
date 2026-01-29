@@ -34,7 +34,7 @@ const menuItems = [
                 <div class="hidden lg:flex space-x-8 items-center">
                     <RouterLink v-for="item in menuItems" :key="item.name" :to="item.path"
                         class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                        active-class="text-blue-600 font-semibold">
+                        active-class="text-blue-600 font-semibold bg-blue-50 px-3 py-2 rounded-lg">
                         {{ item.name }}
                     </RouterLink>
 
