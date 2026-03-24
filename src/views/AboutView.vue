@@ -47,7 +47,7 @@ const missions = [
 
                     <div class="relative order-2 lg:order-1">
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            <img src="https://images.unsplash.com/photo-1542967139-b45bb326ec87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFzamlkJTIwcG9ndW5nJTIwZGFsYW5nYW58ZW58MHx8MHx8fDA%3D"
                                 alt="Kegiatan Wisma"
                                 class="w-full object-cover h-[500px] hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>

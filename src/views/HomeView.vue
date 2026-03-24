@@ -50,7 +50,7 @@ const features = [
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-                    <div class="max-w-2xl text-center lg:text-left pt-10 lg:pt-0">
+                    <div class="md:mx-6 lg:max-w-2xl text-center lg:text-left pt-10 lg:pt-0">
                         <!-- <div
                             class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 mb-8 bg-blue-50/50 backdrop-blur-sm shadow-sm hover:bg-blue-100 transition-colors cursor-default">
                             <SparklesIcon class="w-4 h-4 text-blue-600" />
@@ -85,7 +85,7 @@ const features = [
                         </div>
                     </div>
 
-                    <div class="relative lg:ml-auto w-full max-w-lg perspective-1000">
+                    <div class="relative mx-auto lg:ml-auto w-full max-w-lg perspective-1000">
                         <div
                             class="relative rounded-3xl bg-slate-900/5 p-3 ring-1 ring-inset ring-slate-900/10 shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500 group">
                             <div class="rounded-2xl overflow-hidden bg-white aspect-[4/5] sm:aspect-[4/3] relative">
@@ -102,7 +102,7 @@ const features = [
                         </div>
 
                         <div
-                            class="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center gap-4 animate-float">
+                            class="absolute -bottom-8 left-6 md:-left-8 bg-white/90 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center gap-4 animate-float">
                             <div class="bg-red-50 p-3 rounded-xl text-red-500">
                                 <MapPinIcon class="h-6 w-6" />
                             </div>
